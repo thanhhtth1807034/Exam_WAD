@@ -1,0 +1,74 @@
+﻿@model exam_MVC.Models.Exam
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Exam</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamSubject.SubjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExamSubject.SubjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Faculty.NameFaculty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faculty.NameFaculty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StarTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StarTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExamDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExamDuration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Room)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Room)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ExamId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

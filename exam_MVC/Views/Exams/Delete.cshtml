@@ -1,0 +1,80 @@
+﻿@model exam_MVC.Models.Exam
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Exam</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamSubject.SubjectName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExamSubject.SubjectName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Faculty.NameFaculty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Faculty.NameFaculty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StarTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.StarTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExamDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ExamDuration)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ExamDuration)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Room)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Room)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Status)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
