@@ -82,5 +82,3 @@ E:\C#\exam_MVC\exam_MVC\obj\Debug\exam_MVC.dll
 E:\C#\exam_MVC\exam_MVC\obj\Debug\exam_MVC.pdb
 E:\C#\exam_MVC\exam_MVC\obj\Debug\exam_MVC.Migrations.InitializeDatabase.resources
 E:\C#\exam_MVC\exam_MVC\obj\Debug\exam_MVC.csproj.GenerateResource.cache
-E:\C#\exam_MVC\exam_MVC\obj\Debug\exam_MVC.csprojAssemblyReference.cache
-E:\C#\exam_MVC\exam_MVC\obj\Debug\exam_MVC.Migrations.AddClassRoom.resources

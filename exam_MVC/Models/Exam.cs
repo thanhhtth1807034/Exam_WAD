@@ -13,7 +13,7 @@ namespace exam_MVC.Models
         
         public int FacultyId { get; set; }
         public int ExamSubjectId { get; set; }
-        public int ClassRoomtId { get; set; }
+        public int ClassRoomId { get; set; }
         
         [DataType(DataType.Time)]
         [DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:HH:mm}")]
@@ -22,9 +22,7 @@ namespace exam_MVC.Models
         public DateTime ExamDate{ get; set; }
         [Required]
         public int ExamDuration { get; set; }
-        [Required]
-        public string Room { get; set; }
-        [Required]
+        
         public ExamStatus Status { get; set; }
         
         public virtual Faculty Faculty { get; set; }

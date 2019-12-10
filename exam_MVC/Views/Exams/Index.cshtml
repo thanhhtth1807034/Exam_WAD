@@ -12,6 +12,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.ClassRoom.RoomName)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.ExamSubject.SubjectName)
         </th>
         <th>
@@ -27,9 +30,6 @@
             @Html.DisplayNameFor(model => model.ExamDuration)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Room)
-        </th>
-        <th>
             @Html.DisplayNameFor(model => model.Status)
         </th>
         <th></th>
@@ -37,6 +37,9 @@
 
 @foreach (var item in Model) {
     <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ClassRoom.RoomName)
+        </td>
         <td>
             @Html.DisplayFor(modelItem => item.ExamSubject.SubjectName)
         </td>
@@ -51,9 +54,6 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.ExamDuration)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Room)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.Status)

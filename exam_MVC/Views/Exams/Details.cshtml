@@ -11,6 +11,14 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
+            @Html.DisplayNameFor(model => model.ClassRoom.RoomName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassRoom.RoomName)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.ExamSubject.SubjectName)
         </dt>
 
@@ -48,14 +56,6 @@
 
         <dd>
             @Html.DisplayFor(model => model.ExamDuration)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Room)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Room)
         </dd>
 
         <dt>

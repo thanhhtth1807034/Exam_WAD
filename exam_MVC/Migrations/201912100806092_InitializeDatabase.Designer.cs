@@ -7,13 +7,13 @@ namespace exam_MVC.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.2.0-61023")]
-    public sealed partial class AddClassRoom : IMigrationMetadata
+    public sealed partial class InitializeDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(AddClassRoom));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(InitializeDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "201912091010062_AddClassRoom"; }
+            get { return "201912100806092_InitializeDatabase"; }
         }
         
         string IMigrationMetadata.Source
